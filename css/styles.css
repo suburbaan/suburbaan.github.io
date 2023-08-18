@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+.menu a i {
+    margin-right: 10px;
+}
+
+.menu-text {
+    display: none;
+    margin-left: 10px;
+}
+
+.menu a:hover .menu-text {
+    display: inline;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.miReferencia {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.miReferencia td {
+    padding: 20px;
+    vertical-align: top;
+    font-size: 20px; 
+    line-height: 1.5;
+}
+
+.imagenesReducidas {
+    max-width: 200px;
+}
+
+.imagenesGrandes{
+    max-width: 500px; 
+    height: auto;
+    float: right;
+    margin: 1px;
+}
+
+.contacto-info {
+    margin-top: 10px; 
+}
+
+.derecha{
+    text-align: right;
+}
+
+.sombra{
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+#inicio { 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    background-color: #ffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#referencia {
+    background-color: #333;
+    color: #fff;
+}
+
+#experiencia {
+    background-color: #f4f4f4;
+}
+
+
+#proyectos {
+    background-color: #f4f4f4;
+}
+
+
+#contacto {
+    background-color: #333;
+    color: #fff;
+}
