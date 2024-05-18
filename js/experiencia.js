@@ -1,5 +1,12 @@
 const experienciaLaboral = [
     {
+      empresa: "EGIS CASABLANCA S.P.A",
+      categoria: "desarrollo",
+      puesto: "Desarrollador Python",
+      fechas: "abril 2023 - abril 2024",
+      descripcion: "Desarrollo de app’s web mediante python (FLASK), JavaScript, SQL SERVER , Microsoft Azure SQL, sitios web en Wordpress. Adicional realizar tareas de soporte técnico informático."
+    },
+    {
       empresa: "MZZO CHILE",
       categoria: "desarrollo",
       puesto: "Desarrollador web",

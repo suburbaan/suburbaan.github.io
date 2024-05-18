@@ -101,6 +101,31 @@ body {
     line-height: 1.5;
 }
 
+.misProyectos {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.misProyectos td {
+    padding: 20px;
+    vertical-align: top;
+    font-size: 20px; 
+    line-height: 1.5;
+}
+
+.Btn-ref{
+    display: inline-block;
+    padding: 10px 60px;
+    background-color: #0074D9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
 .imagenesReducidas {
     max-width: 200px;
 }
@@ -278,6 +303,42 @@ body {
 
 #cursos {
     background-color: #f4f4f4;
+}
+
+#cursos{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+  
+.cursos-container {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.cursos-item {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+  
+#cursos-filtro {
+    margin-bottom: 20px;
 }
 
 #proyectos {
