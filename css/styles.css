@@ -101,19 +101,6 @@ body {
     line-height: 1.5;
 }
 
-.misProyectos {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-.misProyectos td {
-    padding: 20px;
-    vertical-align: top;
-    font-size: 20px; 
-    line-height: 1.5;
-}
-
 .Btn-ref{
     display: inline-block;
     padding: 10px 60px;
