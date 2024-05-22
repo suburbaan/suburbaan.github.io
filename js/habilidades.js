@@ -14,13 +14,12 @@ const config = {
     responsive: true,
     plugins: {
       legend: {
-        position: 'bottom' // Cambiar a 'top', 'left' o 'right' según prefieras
+        position: 'bottom'
       }
     }
   }
 };
 
-// Crear el gráfico
 window.onload = function() {
   const ctx = document.getElementById('skillsChart').getContext('2d');
   new Chart(ctx, config);
@@ -32,11 +31,11 @@ window.onload = function() {
 
 $(document).ready(function(){
   $('.chart-carousel').slick({
-      slidesToShow: 1,       // Mostrar solo 1 habilidad a la vez para el efecto de desvanecimiento
+      slidesToShow: 1,       
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,   // Velocidad de la animación
-      fade: false,            // Habilitar el efecto de desvanecimiento
+      autoplaySpeed: 2000,   
+      fade: false,            
       prevArrow: false,
       nextArrow: false
   });
