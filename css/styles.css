@@ -139,7 +139,46 @@ h2 {
   padding-top: 64px;
 }
 
-.hero-content { max-width: 700px; }
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+
+.hero-content { max-width: 580px; }
+
+/* Foto con borde degradado */
+.hero-photo-wrap {
+  flex-shrink: 0;
+}
+
+.hero-photo-border {
+  padding: 3px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+  box-shadow: 0 0 40px rgba(139,92,246,0.35), 0 0 80px rgba(59,130,246,0.2);
+}
+
+.hero-photo {
+  display: block;
+  width: 300px;
+  height: 360px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
+}
+
+@media (max-width: 860px) {
+  .hero-layout {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .hero-ctas { justify-content: center; }
+  .hero-photo { width: 200px; height: 240px; }
+}
 
 .hero-badge {
   display: inline-flex;
