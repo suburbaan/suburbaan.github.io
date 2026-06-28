@@ -499,6 +499,96 @@ a.repo-card:hover .repo-name { color: #a5b4fc; }
   border: 1px solid rgba(59,130,246,0.2);
 }
 
+/* ── CERTIFICADOS ── */
+.certs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cert-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f59e0b, #f97316, #ec4899);
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  border-color: rgba(245,158,11,0.3);
+}
+
+.cert-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.cert-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: rgba(245,158,11,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cert-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cert-issuer {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+
+.cert-year {
+  font-size: 0.75rem;
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.cert-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .cert-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cert-actions { width: 100%; }
+  .cert-actions a { flex: 1; text-align: center; }
+}
+
 /* ── CONTACTO ── */
 #contacto { padding: 6rem 0; }
 
