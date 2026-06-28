@@ -390,7 +390,7 @@ h1 .name-gradient {
 
 .repo-card {
   background: var(--bg2);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(148,163,184,0.25);
   border-radius: 12px;
   padding: 1rem 1.25rem;
   display: flex;
@@ -398,12 +398,14 @@ h1 .name-gradient {
   gap: 0.5rem;
   text-decoration: none;
   color: var(--text);
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 
 a.repo-card:hover {
   border-color: var(--accent);
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
 .repo-card-header {
